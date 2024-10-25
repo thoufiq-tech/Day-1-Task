@@ -1,4 +1,5 @@
-
+DISPLAY THE COUNTRY FLAGS IN CONSOLE.
+    
 async function rest(){
     const res = fetch('https://restcountries.com/v3.1/all');
     res.then((data)=> data.json()).then((data1)=>{
