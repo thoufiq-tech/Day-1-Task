@@ -10,3 +10,41 @@ async function rest(){
     });
 }
 rest();
+
+2. DISPLAY THE REGION NAME
+
+function rest(){
+    const res = fetch('https://restcountries.com/v3.1/all');
+    res.then((data)=> data.json()).then((data1)=>{
+        console.log(data1)
+        for (let  i =0; i<data1.length; i++){
+            console.log(data1[i].region);
+        }
+    });
+}
+rest();
+
+3. DISPLAY THE SUB REGION 
+function rest(){
+    const res = fetch('https://restcountries.com/v3.1/all');
+    res.then((data)=> data.json()).then((data1)=>{
+        console.log(data1)
+        for (let  i =0; i<data1.length; i++){
+            console.log(data1[i].subregion);
+        }
+    });
+}
+rest();
+
+4. DISPLAY THE POPULATION
+
+function rest(){
+    const res = fetch('https://restcountries.com/v3.1/all');
+    res.then((data)=> data.json()).then((data1)=>{
+        console.log(data1)
+        for (let  i =0; i<data1.length; i++){
+            console.log(data1[i].population);
+        }
+    });
+}
+rest();
